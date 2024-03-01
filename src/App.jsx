@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import slideImages from "./assets/images"
-import SlideHandler from './Components/SlideHandler'
+import SlideHandler from './Components/SlideHandler/SlideHandler'
 function App() {
  
   return (
