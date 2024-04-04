@@ -19,17 +19,16 @@ const FormValidationddemo = () => {
 
     function validationHandler(event){
         event.preventDefault();
+        let errorAlertMsg=[];
         if(nameValue==""){
         console.log(nameValue,"name");
-
-        setErrorAlert("name field should not be empty");
-        // alert("name field should not be empty");
+        errorAlertMsg.push("name field should not be empty");
         }
         if(passwordValue==""){
         console.log(passwordValue,"passwrod");
-        setErrorAlert(" password should not be empty")
-            // alert("password field should not be empty");
+        errorAlertMsg.push(" password should not be empty")
         }
+        setErrorAlert(errorAlertMsg);
         console.log("gjo");
     }
     console.log("errorAlert",errorAlert);
